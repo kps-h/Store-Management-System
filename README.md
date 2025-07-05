@@ -45,5 +45,5 @@ A powerful and user-friendly inventory management system designed to streamline 
 
 ## Clone the Repository**
    ```bash
-   git clone https://github.com/kps-h/Store-Management-System.git
+  git@github.com:kps-h/Store-Management-System.git
 
