@@ -1,7 +1,4 @@
-# Store-Management-System
-
-![Screenshot 2025-07-05 130556](https://github.com/user-attachments/assets/872860d3-ad05-4316-8cb0-d7a6095b93ed)
-
+### Store-Management-System
 
 A powerful and user-friendly inventory management system designed to streamline stock control, track item movement, and provide insightful analytics for warehouse or store operations.
 
