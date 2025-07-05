@@ -1,4 +1,4 @@
-### Store-Management-System
+# 🏬 Store Management System (SMS)
 
 A powerful and user-friendly inventory management system designed to streamline stock control, track item movement, and provide insightful analytics for warehouse or store operations.
 
