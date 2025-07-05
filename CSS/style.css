@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the whole content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+/* Header styling */
+.header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Table container */
+.table-container {
+    margin-top: 30px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field for filtering */
+#filterInput {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+    font-size: 1rem;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 12px;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+/* Modal styles */
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Form fields styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+/* Footer of modal */
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer .btn {
+    width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #filterInput {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    .modal-dialog {
+        margin: 20px auto;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .modal-footer .btn {
+        width: 100px;
+    }
+}

@@ -1,0 +1,73 @@
+/* Custom colors */
+.bg-blue {
+    background-color: #1E90FF !important;
+}
+
+.bg-orange {
+    background-color: #f39c12 !important;
+}
+
+.bg-red {
+    background-color: #e74c3c !important;
+}
+
+.bg-green {
+    background-color: #2ecc71 !important;
+}
+
+.bg-purple {
+    background-color: #9b59b6 !important;
+}
+
+/* Bold all content in the dashboard */
+body, .card-title, .card-body p, .table th, .table td, .navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+/* Card styles */
+.dashboard-card {
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+}
+
+.card-body .icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/* Table Styles */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 85%;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .content {
+        padding: 10px;
+    }
+
+    .row.g-3 {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}

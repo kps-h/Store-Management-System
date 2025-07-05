@@ -1,0 +1,262 @@
+/* General Page Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Cards Container (Top Row) */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cards in a row */
+    grid-gap: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.card i {
+    font-size: 40px;
+    color: #007bff;
+}
+/* Sales Chart & Pie Charts (Second Row) */
+.chart-report-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+    grid-gap: 20px;
+}
+
+/* Ensure equal size for chart containers */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+}
+
+/* Chart title style */
+.chart-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Make sure the canvas inside the container is responsive and maintains size */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Responsive Styles for Charts */
+@media (max-width: 768px) {
+    .chart-report-container {
+        grid-template-columns: 1fr; /* Stack charts vertically */
+    }
+
+    .chart-container {
+        height: 250px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-report-container {
+        grid-template-columns: 1fr; /* Stack charts vertically */
+    }
+
+    .chart-container {
+        height: 200px; /* Reduce height further for even smaller screens */
+    }
+}
+
+/* Reports Section (Third Row) */
+.reports-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.report-container {
+    text-align: center;
+}
+
+.report-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+.stock-in-link,
+.stock-out-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stock-in-link:hover,
+.stock-out-link:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+}
+
+.close-btn:hover {
+    color: #ff6347;
+}
+
+.modal h3 {
+    margin-top: 0;
+}
+
+.modal p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards in a row */
+    }
+
+    .chart-report-container {
+        grid-template-columns: 1fr; /* Stack charts vertically */
+    }
+
+    .reports-container {
+        grid-template-columns: 1fr; /* Stack reports vertically */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    canvas {
+        height: 250px !important;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+
+    .chart-report-container {
+        grid-template-columns: 1fr; /* Stack charts vertically */
+    }
+
+    .reports-container {
+        grid-template-columns: 1fr; /* Stack reports vertically */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    canvas {
+        height: 200px !important;
+    }
+}
